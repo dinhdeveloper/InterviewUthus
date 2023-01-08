@@ -22,10 +22,10 @@ object DatabaseBuilder {
         Room.databaseBuilder(
             context.applicationContext,
             AppDatabase::class.java,
-            "food_database"
+            "database_food"
         )
-            .fallbackToDestructiveMigration()
             .allowMainThreadQueries()
+            .fallbackToDestructiveMigration()
             .build()
 
 }

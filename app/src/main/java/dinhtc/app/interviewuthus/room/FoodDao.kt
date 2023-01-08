@@ -7,7 +7,7 @@ import dinhtc.app.interviewuthus.model.FoodModel
 @Dao
 interface FoodDao {
 
-    @Query("SELECT * FROM food_table")
+    @Query("SELECT * FROM table_food")
     suspend fun getFoods(): List<FoodModel>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
